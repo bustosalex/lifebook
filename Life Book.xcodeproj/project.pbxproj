@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EB3512A2684041E2602FB920 /* Pods_Life_Book.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8876C1E834B4D04717B2DFAB /* Pods_Life_Book.framework */; };
+		FA9EE6041F33B44A009A4C42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EE6031F33B44A009A4C42 /* User.swift */; };
+		FA9EE6071F33B57D009A4C42 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EE6061F33B57D009A4C42 /* NetworkManager.swift */; };
 		FABA40D21F33AA1F00DCCD9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA40D11F33AA1F00DCCD9A /* AppDelegate.swift */; };
 		FABA40D41F33AA1F00DCCD9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA40D31F33AA1F00DCCD9A /* ViewController.swift */; };
 		FABA40D71F33AA1F00DCCD9A /* LoginRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABA40D51F33AA1F00DCCD9A /* LoginRegister.storyboard */; };
@@ -19,6 +21,8 @@
 		707FEAC9E858CFEAB7E56C1F /* Pods-Life Book.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Life Book.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Life Book/Pods-Life Book.debug.xcconfig"; sourceTree = "<group>"; };
 		75EE48A2D68152046E237567 /* Pods-Life Book.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Life Book.release.xcconfig"; path = "Pods/Target Support Files/Pods-Life Book/Pods-Life Book.release.xcconfig"; sourceTree = "<group>"; };
 		8876C1E834B4D04717B2DFAB /* Pods_Life_Book.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Life_Book.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9EE6031F33B44A009A4C42 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA9EE6061F33B57D009A4C42 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FABA40CE1F33AA1F00DCCD9A /* Life Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABA40D11F33AA1F00DCCD9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FABA40D31F33AA1F00DCCD9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +61,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FA9EE6011F33B42D009A4C42 /* Realm Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA9EE6021F33B43A009A4C42 /* Users */,
+			);
+			name = "Realm Model";
+			sourceTree = "<group>";
+		};
+		FA9EE6021F33B43A009A4C42 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				FA9EE6031F33B44A009A4C42 /* User.swift */,
+			);
+			name = Users;
+			sourceTree = "<group>";
+		};
+		FA9EE6051F33B54E009A4C42 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FA9EE6061F33B57D009A4C42 /* NetworkManager.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		FABA40C51F33AA1F00DCCD9A = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +106,8 @@
 		FABA40D01F33AA1F00DCCD9A /* Life Book */ = {
 			isa = PBXGroup;
 			children = (
+				FA9EE6051F33B54E009A4C42 /* API */,
+				FA9EE6011F33B42D009A4C42 /* Realm Model */,
 				FABA40D11F33AA1F00DCCD9A /* AppDelegate.swift */,
 				FABA40D31F33AA1F00DCCD9A /* ViewController.swift */,
 				FABA40D51F33AA1F00DCCD9A /* LoginRegister.storyboard */,
@@ -181,9 +211,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Life Book/Pods-Life Book-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -196,13 +233,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Life Book-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -212,8 +252,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9EE6071F33B57D009A4C42 /* NetworkManager.swift in Sources */,
 				FABA40D41F33AA1F00DCCD9A /* ViewController.swift in Sources */,
 				FABA40D21F33AA1F00DCCD9A /* AppDelegate.swift in Sources */,
+				FA9EE6041F33B44A009A4C42 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +423,7 @@
 				FABA40E21F33AA1F00DCCD9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
