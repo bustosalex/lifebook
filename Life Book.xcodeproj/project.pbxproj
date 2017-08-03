@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3469AF401F33B41D00098669 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3469AF3F1F33B41D00098669 /* LoginViewController.swift */; };
+		3469AF421F33B43200098669 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3469AF411F33B43200098669 /* RegisterViewController.swift */; };
 		EB3512A2684041E2602FB920 /* Pods_Life_Book.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8876C1E834B4D04717B2DFAB /* Pods_Life_Book.framework */; };
 		FABA40D21F33AA1F00DCCD9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA40D11F33AA1F00DCCD9A /* AppDelegate.swift */; };
-		FABA40D41F33AA1F00DCCD9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA40D31F33AA1F00DCCD9A /* ViewController.swift */; };
 		FABA40D71F33AA1F00DCCD9A /* LoginRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABA40D51F33AA1F00DCCD9A /* LoginRegister.storyboard */; };
 		FABA40D91F33AA1F00DCCD9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABA40D81F33AA1F00DCCD9A /* Assets.xcassets */; };
 		FABA40DC1F33AA1F00DCCD9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABA40DA1F33AA1F00DCCD9A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3469AF3F1F33B41D00098669 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3469AF411F33B43200098669 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		707FEAC9E858CFEAB7E56C1F /* Pods-Life Book.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Life Book.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Life Book/Pods-Life Book.debug.xcconfig"; sourceTree = "<group>"; };
 		75EE48A2D68152046E237567 /* Pods-Life Book.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Life Book.release.xcconfig"; path = "Pods/Target Support Files/Pods-Life Book/Pods-Life Book.release.xcconfig"; sourceTree = "<group>"; };
 		8876C1E834B4D04717B2DFAB /* Pods_Life_Book.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Life_Book.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABA40CE1F33AA1F00DCCD9A /* Life Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABA40D11F33AA1F00DCCD9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FABA40D31F33AA1F00DCCD9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FABA40D61F33AA1F00DCCD9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginRegister.storyboard; sourceTree = "<group>"; };
 		FABA40D81F33AA1F00DCCD9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FABA40DB1F33AA1F00DCCD9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +59,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3469AF3D1F33B3F000098669 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3469AF3E1F33B3F700098669 /* Login/Register */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3469AF3E1F33B3F700098669 /* Login/Register */ = {
+			isa = PBXGroup;
+			children = (
+				3469AF3F1F33B41D00098669 /* LoginViewController.swift */,
+				3469AF411F33B43200098669 /* RegisterViewController.swift */,
+			);
+			name = Login/Register;
+			sourceTree = "<group>";
+		};
 		FABA40C51F33AA1F00DCCD9A = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +97,8 @@
 		FABA40D01F33AA1F00DCCD9A /* Life Book */ = {
 			isa = PBXGroup;
 			children = (
+				3469AF3D1F33B3F000098669 /* Controllers */,
 				FABA40D11F33AA1F00DCCD9A /* AppDelegate.swift */,
-				FABA40D31F33AA1F00DCCD9A /* ViewController.swift */,
 				FABA40D51F33AA1F00DCCD9A /* LoginRegister.storyboard */,
 				FABA40D81F33AA1F00DCCD9A /* Assets.xcassets */,
 				FABA40DA1F33AA1F00DCCD9A /* LaunchScreen.storyboard */,
@@ -212,7 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FABA40D41F33AA1F00DCCD9A /* ViewController.swift in Sources */,
+				3469AF421F33B43200098669 /* RegisterViewController.swift in Sources */,
+				3469AF401F33B41D00098669 /* LoginViewController.swift in Sources */,
 				FABA40D21F33AA1F00DCCD9A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +401,7 @@
 				FABA40E21F33AA1F00DCCD9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
