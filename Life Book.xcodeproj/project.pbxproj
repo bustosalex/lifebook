@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB3512A2684041E2602FB920 /* Pods_Life_Book.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8876C1E834B4D04717B2DFAB /* Pods_Life_Book.framework */; };
+		FABA40D21F33AA1F00DCCD9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA40D11F33AA1F00DCCD9A /* AppDelegate.swift */; };
+		FABA40D41F33AA1F00DCCD9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA40D31F33AA1F00DCCD9A /* ViewController.swift */; };
+		FABA40D71F33AA1F00DCCD9A /* LoginRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABA40D51F33AA1F00DCCD9A /* LoginRegister.storyboard */; };
+		FABA40D91F33AA1F00DCCD9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABA40D81F33AA1F00DCCD9A /* Assets.xcassets */; };
+		FABA40DC1F33AA1F00DCCD9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABA40DA1F33AA1F00DCCD9A /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		707FEAC9E858CFEAB7E56C1F /* Pods-Life Book.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Life Book.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Life Book/Pods-Life Book.debug.xcconfig"; sourceTree = "<group>"; };
+		75EE48A2D68152046E237567 /* Pods-Life Book.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Life Book.release.xcconfig"; path = "Pods/Target Support Files/Pods-Life Book/Pods-Life Book.release.xcconfig"; sourceTree = "<group>"; };
+		8876C1E834B4D04717B2DFAB /* Pods_Life_Book.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Life_Book.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABA40CE1F33AA1F00DCCD9A /* Life Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABA40D11F33AA1F00DCCD9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FABA40D31F33AA1F00DCCD9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FABA40D61F33AA1F00DCCD9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginRegister.storyboard; sourceTree = "<group>"; };
+		FABA40D81F33AA1F00DCCD9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FABA40DB1F33AA1F00DCCD9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FABA40DD1F33AA1F00DCCD9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FABA40CB1F33AA1F00DCCD9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3512A2684041E2602FB920 /* Pods_Life_Book.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FA03004F1F0A0261E09B9F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8876C1E834B4D04717B2DFAB /* Pods_Life_Book.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2812F734A91F75FB2030C6A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				707FEAC9E858CFEAB7E56C1F /* Pods-Life Book.debug.xcconfig */,
+				75EE48A2D68152046E237567 /* Pods-Life Book.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FABA40C51F33AA1F00DCCD9A = {
+			isa = PBXGroup;
+			children = (
+				FABA40D01F33AA1F00DCCD9A /* Life Book */,
+				FABA40CF1F33AA1F00DCCD9A /* Products */,
+				2812F734A91F75FB2030C6A3 /* Pods */,
+				0FA03004F1F0A0261E09B9F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FABA40CF1F33AA1F00DCCD9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FABA40CE1F33AA1F00DCCD9A /* Life Book.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FABA40D01F33AA1F00DCCD9A /* Life Book */ = {
+			isa = PBXGroup;
+			children = (
+				FABA40D11F33AA1F00DCCD9A /* AppDelegate.swift */,
+				FABA40D31F33AA1F00DCCD9A /* ViewController.swift */,
+				FABA40D51F33AA1F00DCCD9A /* LoginRegister.storyboard */,
+				FABA40D81F33AA1F00DCCD9A /* Assets.xcassets */,
+				FABA40DA1F33AA1F00DCCD9A /* LaunchScreen.storyboard */,
+				FABA40DD1F33AA1F00DCCD9A /* Info.plist */,
+			);
+			path = "Life Book";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FABA40CD1F33AA1F00DCCD9A /* Life Book */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FABA40E01F33AA1F00DCCD9A /* Build configuration list for PBXNativeTarget "Life Book" */;
+			buildPhases = (
+				746FD089F27BC6F66F768930 /* [CP] Check Pods Manifest.lock */,
+				FABA40CA1F33AA1F00DCCD9A /* Sources */,
+				FABA40CB1F33AA1F00DCCD9A /* Frameworks */,
+				FABA40CC1F33AA1F00DCCD9A /* Resources */,
+				2AA2272EC0DACCE266D9BA5D /* [CP] Embed Pods Frameworks */,
+				28B776000A89410138093724 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Life Book";
+			productName = "Life Book";
+			productReference = FABA40CE1F33AA1F00DCCD9A /* Life Book.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FABA40C61F33AA1F00DCCD9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "App Factory";
+				TargetAttributes = {
+					FABA40CD1F33AA1F00DCCD9A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = V8N6W23849;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FABA40C91F33AA1F00DCCD9A /* Build configuration list for PBXProject "Life Book" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FABA40C51F33AA1F00DCCD9A;
+			productRefGroup = FABA40CF1F33AA1F00DCCD9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FABA40CD1F33AA1F00DCCD9A /* Life Book */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FABA40CC1F33AA1F00DCCD9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABA40DC1F33AA1F00DCCD9A /* LaunchScreen.storyboard in Resources */,
+				FABA40D91F33AA1F00DCCD9A /* Assets.xcassets in Resources */,
+				FABA40D71F33AA1F00DCCD9A /* LoginRegister.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28B776000A89410138093724 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Life Book/Pods-Life Book-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AA2272EC0DACCE266D9BA5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Life Book/Pods-Life Book-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		746FD089F27BC6F66F768930 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FABA40CA1F33AA1F00DCCD9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABA40D41F33AA1F00DCCD9A /* ViewController.swift in Sources */,
+				FABA40D21F33AA1F00DCCD9A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FABA40D51F33AA1F00DCCD9A /* LoginRegister.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FABA40D61F33AA1F00DCCD9A /* Base */,
+			);
+			name = LoginRegister.storyboard;
+			sourceTree = "<group>";
+		};
+		FABA40DA1F33AA1F00DCCD9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FABA40DB1F33AA1F00DCCD9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FABA40DE1F33AA1F00DCCD9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FABA40DF1F33AA1F00DCCD9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FABA40E11F33AA1F00DCCD9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 707FEAC9E858CFEAB7E56C1F /* Pods-Life Book.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V8N6W23849;
+				INFOPLIST_FILE = "Life Book/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.uwp.appfactory.Life-Book";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FABA40E21F33AA1F00DCCD9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75EE48A2D68152046E237567 /* Pods-Life Book.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V8N6W23849;
+				INFOPLIST_FILE = "Life Book/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.uwp.appfactory.Life-Book";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FABA40C91F33AA1F00DCCD9A /* Build configuration list for PBXProject "Life Book" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FABA40DE1F33AA1F00DCCD9A /* Debug */,
+				FABA40DF1F33AA1F00DCCD9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FABA40E01F33AA1F00DCCD9A /* Build configuration list for PBXNativeTarget "Life Book" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FABA40E11F33AA1F00DCCD9A /* Debug */,
+				FABA40E21F33AA1F00DCCD9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FABA40C61F33AA1F00DCCD9A /* Project object */;
+}
